@@ -1,0 +1,139 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.page{
+    width: 1280px;
+}
+
+.page_name{
+    color: #4bcaff;
+    font-size: 80px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.ra{
+    color: #000;
+}
+
+.nav_menu{
+    background-color: #35444f;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 3%;
+}
+
+.menu_list > a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu_list{
+    display: inline-block;
+    padding: 2%;
+    border-right: 1px solid #35444f;
+    border-left: 1px solid #35444f;
+}
+
+.menu_list:hover{
+    background-color: #222f3a;
+    border-right: 1px solid #818181;
+    border-left: 1px solid #818181;
+    cursor: pointer;
+}
+
+.nav_menu, .side_menu{
+    list-style: none;
+}
+
+.sidebar_menu {
+    border: 1px solid #35444f;
+    margin-right: 5%;
+    width: 360px;
+}
+
+.side_menu_list>a{
+    text-decoration: none;
+    color: #485863;
+    font-size: 30px;
+}
+
+.main_sector>.sidebar_menu, .main_sector>.section{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.side_menu_list{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+}
+
+.section{
+    width: 850px;
+
+}
+
+.image{
+    border: 1px solid #35444f;
+    /*width: 850px;*/
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.paragraph{
+    padding: 3%;
+    font-size: 18px;
+}
+
+.side_menu_list:hover{
+    padding-left: 25%;
+    background-color: #dbdbdb;
+}
+
+.footer{
+    background-color: #b4b7ba;
+    list-style: none;
+    margin-bottom: 2%;
+}
+
+.footer > *{
+    display: inline-block;
+    vertical-align: revert;
+}
+
+.footer_menu{
+    width: 1000px;
+    padding-left: 2%;
+}
+
+.footer_menu_list{
+    display: inline-block;
+    padding: 1%;
+}
+
+.footer_menu_list>a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #0c1927;
+}
+
+.copy{
+    width: 208px;
+    text-align: right;
+    color: #010101;
+    font-size: 16px;
+}
+
+.footer_menu_list>a:hover{
+    color: #3181a6;
+    border-bottom: 1px solid #3181a6;
+}
