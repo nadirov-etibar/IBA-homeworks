@@ -8,10 +8,15 @@
 }
 
 .page_name{
-    color: #4bcaff;
+
     font-size: 80px;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+.logo_link{
+    color: #4bcaff;
+    text-decoration: none;
 }
 
 .ra{
