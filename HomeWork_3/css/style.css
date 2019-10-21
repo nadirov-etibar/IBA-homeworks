@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background: url("../img/bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.nav{
+    height: 50px;
+}
+
+.logo{
+    float: left;
+    margin-right: 10px;
+}
+
+.logo_hover{
+    display: none;
+    float: left;
+}
+
+.logo:hover{
+    display: none;
+}
+
+.logo:hover + a{
+    display: block;
+    margin-right: 10px;
+}
+
+.logo_name_div{
+    float: left;
+}
+
+.logo_name_div:hover a{
+    color: #f26522;
+}
+
+.logo_name{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.milan{
+    font-size: 28px;
+}
+
+.holiday{
+    font-size: 18px;
+}
+
+.logo_link_div{
+    float: right;
+    margin-top: 8px;
+}
+
+.logo_info{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.content{
+    width: 1200px;
+    /*background: teal;*/
+    height: 550px;
+}
+
+.image_div{
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 55px;
+    margin-right: 90px;
+    padding-top: 5px;
+}
+
+.image_div:hover a{
+    color: #f26522;
+}
+
+
+.image{
+    width: 340px;
+    border: 2px solid;
+    border-image: linear-gradient(whitesmoke, gray) 1;
+}
+
+.image:hover::after{
+    content: " ";
+    height: 50px;
+    width: 340px;
+    border: 1px solid #f26522;
+    background: #f26522;
+}
+
+.image_div:nth-child(3n){
+    margin-right: 0;
+}
+
+.image_describtion{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_text{
+    text-align: center;
+    color: #fff;
+    width: 1200px;
+    float: left;
+}
+
+p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
