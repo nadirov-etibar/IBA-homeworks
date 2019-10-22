@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 html{
-    background: url("../img/bg.png") no-repeat center center fixed;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/bg.png');
     background-size: cover;
 }
 
@@ -101,6 +101,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     border-image: linear-gradient(whitesmoke, gray) 1;
+    box-shadow: 5px 10px 10px;
     padding-bottom: 10px;
     cursor: pointer;
 }
