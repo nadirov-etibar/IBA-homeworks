@@ -30,6 +30,7 @@
 
 .logo:hover{
     color: #3cb878;
+    transition: 2s;
 }
 
 .right{
@@ -154,7 +155,7 @@ p{
     height: 600px;
     background-color: white;
     border-radius: 10px;
-
+    position: relative;
 }
 
 .centered{
@@ -179,7 +180,7 @@ p{
     border: 1px solid #3cb878;
     width: 18px;
     position: absolute;
-    top: 20%;
+    top: 5%;
     height: 18px;
     background-color: #3cb878;
 }
@@ -201,6 +202,7 @@ p{
 .fb_button:hover{
     background-color: #264b96;
     border: 1px solid #264b96;
+    transition: 2s;
 }
 
 .google_button{
@@ -211,6 +213,7 @@ p{
 .google_button:hover{
     background-color: #c3412c;
     border: 1px solid #c3412c;
+    transition: 2s;
 }
 
 .icon{
@@ -264,7 +267,6 @@ p{
 
 .input:focus{
     box-shadow: 0px 2px 9px 2px grey;
-    border: none;
     outline: none;
 }
 
@@ -292,6 +294,7 @@ p{
     background-color: #fff;
     border-radius: 3px;
     border: 1px solid #cecece;
+    margin-right: 5px;
 }
 
 .checkbox_label::after {
@@ -326,6 +329,7 @@ p{
 .btn-button:hover{
     background-color: #329a65;
     border: 1px solid #329a65;
+    transition: 2s;
 }
 
 h2{
