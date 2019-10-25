@@ -1,0 +1,136 @@
+@import "fonts.css";
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.table{
+    font-family: "Arimo", sans-serif;
+    color: #484848;
+    text-transform: uppercase;
+    border: 20px solid #3a4965;
+    border-collapse: collapse;
+}
+
+.row, .col{
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    width: 110px;
+    padding: 20px;
+}
+
+.col:first-child{
+    width: 150px;
+}
+
+.green_bg{
+    background-color: #89c331 !important;
+    border: 1px solid #89c331;
+    color: #fff;
+}
+
+.pink_bg{
+    background-color: #f04a56 !important;
+    border: 1px solid #f04a56;
+    color: #fff;
+}
+
+.blue_bg{
+    background-color: #20807c !important;
+    border: 1px solid #20807c;
+    color: #fff;
+}
+
+.white_bg{
+    background-color: #fafafa !important;
+}
+
+.col:nth-child(even){
+    background-color: #e3e3e3;
+}
+
+.col:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+.choose{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.plan{
+    font-size: 20px;
+    display: block;
+}
+
+.size_wight_font{
+    font-size: 24px;
+    font-weight: 700;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+    width: 140px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #484848;
+    border-left: 1px solid #484848;
+    border-top: 1px solid #484848;
+    border-right: 1px solid #484848;
+    border-bottom-color: #484848;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #404040;
+    border: 1px solid #404040;
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.amount_1{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 36px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+}
+
+.amount_2{
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    bottom: 14px;
+}
+
+.time{
+    font-size: 14px;
+}
+
+.icon{
+    color: #848484;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.head{
+    font-weight: 700;
+}
