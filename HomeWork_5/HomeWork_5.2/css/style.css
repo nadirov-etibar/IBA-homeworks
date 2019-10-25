@@ -30,7 +30,7 @@ html, body{
 }
 
 .col:first-child{
-    width: 150px;
+    width: 167px;
 }
 
 .green_bg{
@@ -100,7 +100,6 @@ html, body{
 
 .btn:hover{
     background-color: #404040;
-    border: 1px solid #404040;
     transform: scale(1.1);
     transition: 2s;
 }
