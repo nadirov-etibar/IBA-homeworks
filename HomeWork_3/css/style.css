@@ -1,52 +1,72 @@
-*{
-    box-sizing: border-box;
+html, body{
+    margin: 0;
+    padding: 0;
 }
-html{
-    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/bg.png');
+
+.bg{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/bg.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 30px);
+    padding-top: 30px;
 }
 
 .container{
     width: 1200px;
     margin: 0 auto;
-    margin-top: 2%;
 }
 
 .nav{
     height: 50px;
+    margin-bottom: 30px;
 }
 
 .logo{
     float: left;
-    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
 }
 
-.logo_hover{
+.logo_image_div{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.logo_image{
+    display: inline-block;
+}
+
+.logo_image_hover{
     display: none;
-    float: left;
 }
 
 .logo:hover{
+    color: #f26522;
+}
+
+.logo:hover>.logo_image_div>.logo_image{
     display: none;
 }
 
-.logo:hover + a{
-    display: block;
-    margin-right: 10px;
+.logo:hover>.logo_image_div>.logo_image_hover{
+    display: inline-block;
 }
 
 .logo_name_div{
-    float: left;
+    display: inline-block;
 }
 
-.logo_name_div:hover a{
-    color: #f26522;
+.logo_name_div>p.logo_name{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 .logo_name{
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
     font-weight: bold;
     line-height: 1;
 }
@@ -56,33 +76,43 @@ html{
 }
 
 .holiday{
+    display: block;
     font-size: 18px;
 }
 
-.logo_link_div{
+.logo_info_div{
     float: right;
-    margin-top: 8px;
+    height: 100%;
+    text-align: right;
+    padding-top: 8px;
+
 }
 
 .logo_info{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+    display: block;
     font-weight: bold;
     line-height: 1;
 }
 
+/*HEADER_END*/
+
+main.container{
+    height: calc(100vh - 190px);
+}
+
 .content{
     width: 1200px;
-    height: 550px;
+    height: calc(100% - 50px);
 }
 
 .image_div{
     float: left;
-    margin-top: 10px;
-    margin-bottom: 55px;
-    margin-right: 90px;
-    padding-top: 5px;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .image_div a{
@@ -95,7 +125,7 @@ html{
 
 
 .image{
-    width: 340px;
+    width: 316px;
     height: 200px;
     border: 2px solid;
     background-repeat: no-repeat;
@@ -132,51 +162,57 @@ html{
 
 .details{
     width: 100%;
-    height: 50px;
+    height: 60px;
     background: #f26522;
     position: relative;
-    top: 146px;
+    top: 150px;
     opacity: 0;
 }
 
 .price{
     float: left;
-    margin-left: 10px;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+
+.details p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 .from{
     color: #fff;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .euro{
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .view{
     float: right;
-    font-size: 24px;
+    font-size: 14px;
     color: #fff;
-    margin-top: 23px;
-    margin-right: 30px;
+    margin-top: 33px;
+    margin-right: 40px;
 }
 
 .view::after{
-    content: " ";
+    content: "\203A";
     position: absolute;
-    bottom: 5px;
-    right: 7px;
-    border: 7px solid transparent;
-    border-left-color: whitesmoke;
+    font-size: 20px;
+    top: 28px;
+    font-weight: 700;
+    right: 17px;
 }
 
 .image_div:hover .details{
     transition-duration: 1s;
     opacity: 1;
 }
-
-
 
 .image_div:nth-child(3n){
     margin-right: 0;
@@ -189,6 +225,10 @@ html{
     margin-top: 10px;
 }
 
+.footer.container{
+    height: 50px;
+}
+
 .footer_text{
     text-align: center;
     color: #fff;
@@ -196,13 +236,3 @@ html{
     float: left;
 }
 
-p{
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-}
-
-a{
-    display: block;
-}
