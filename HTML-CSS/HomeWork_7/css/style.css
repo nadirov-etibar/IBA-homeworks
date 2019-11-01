@@ -1,0 +1,42 @@
+body{
+    background: black;
+    overflow: hidden;
+}
+
+.starwars{
+    perspective: 400px;
+    color: darkgoldenrod;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text_div{
+    position: relative;
+    top: -1000px;
+    transform-style: preserve-3d;
+    animation: starwars 50s linear infinite;
+}
+
+.fade{
+    background: black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+@keyframes starwars {
+    0%{
+        top: 1000px;
+        transform: rotateX(15deg) translateZ(500px);
+    }
+
+    100%{
+        top: -2000px;
+        transform: rotateX(15deg) translateZ(-1000px);
+    }
+}

@@ -328,6 +328,8 @@ html, body{
     padding-top: 30px;
     color: #353a3d;
     height: 234px;
+    width: 400px;
+    justify-self: end;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -336,7 +338,7 @@ html, body{
     background: #f9f7f7;
     text-align: right;
     color: #353a3d;
-    width: 522px;
+    width: 610px;
 }
 
 .bg_gray_2 h3, .bg_gray_2 p{
