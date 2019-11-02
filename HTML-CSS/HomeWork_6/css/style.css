@@ -156,7 +156,7 @@ html, body{
 }
 
 .popular_post_image{
-    width: 75%;
+    width: 1260px;
     margin: 0 auto;
 }
 
@@ -265,7 +265,7 @@ html, body{
 /************************Hot News Section*********************/
 
 .hot_news{
-    width: 80%;
+    width: 1260px;
     margin: 0 auto;
 }
 
@@ -373,7 +373,7 @@ html, body{
 }
 
 .centered{
-    width: 80%;
+    width: 1260px;
     margin: 0 auto;
     display: grid;
     color: #fff;
