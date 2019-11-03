@@ -22,28 +22,28 @@ if (div == false){
 
 // let m = Number(prompt("Enter the first number"));
 // let n = Number(prompt("Enter the last number"));
-
+//
 // while (!Number.isInteger(m) && !Number.isInteger(n)){
 //     m = Number(prompt("Enter the first number correctly"));
 //     n = Number(prompt("Enter the second number correctly"));
 // }
-
+//
 // if (m < n){
 //     for (let i = m; i <= n; i++) {
 //         let no_simple = false;
-
-        // for (let j = 2; j <= i/2; j++) {
-        //     if (i % j == 0){
-        //         no_simple = true;
-        //     }
-        // }
-
-        // if (no_simple == false){
-        //     console.log(i);
-        // }
-    // }
+//
+//         for (let j = 2; j <= i/2; j++) {
+//             if (i % j == 0){
+//                 no_simple = true;
+//             }
+//         }
+//
+//         if (no_simple == false){
+//             console.log(i);
+//         }
+//     }
 // }
-
+//
 // else{
 //     console.log("Enter first number smaller than second number");
 // }
