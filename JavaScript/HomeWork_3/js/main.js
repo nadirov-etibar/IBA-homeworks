@@ -8,40 +8,31 @@ while (isNaN(number_1) && isNaN(number_2)){
     operations = prompt("Enter operations");
 }
 
-function increment(number_1, number_2, operations) {
+function calc(number_1, number_2, operations) {
     if (operations == "+"){
         let sum = parseInt(number_1) + parseInt(number_2);
         console.log(sum);
     }
-}
 
-function decrement(number_1, number_2, operations) {
-    if (operations =="-"){
+    else if (operations =="-"){
         let dec = parseInt(number_1) - parseInt(number_2);
         console.log(dec);
     }
-}
 
-function division(number_1, number_2, operations) {
-    if(operations == "/") {
+    else if(operations == "/") {
         if (number_2 == 0) {
-            console.log("0")
+            console.log("Please change second number.")
         }
         else{
             let div = parseInt(number_1) / parseInt(number_2);
-                console.log(div);
+            console.log(div);
         }
     }
-}
 
-function multiplication(number_1, number_2, operations) {
-    if (operations =="*"){
+    else if (operations =="*"){
         let mult = parseInt(number_1) * parseInt(number_2);
         console.log(mult);
     }
 }
 
-increment(number_1, number_2, operations);
-decrement(number_1, number_2, operations);
-division(number_1, number_2, operations);
-multiplication(number_1, number_2, operations);
+calc(number_1, number_2, operations);
