@@ -1,24 +1,18 @@
-function filterBy (value){
-    let arr = [1,"yeah", true];
-    for (let i = 0; i <= 2; i++) {
-        let typeOf = typeof arr[i];
-        let typeOfToString = typeOf.toString();
-        console.log(typeOfToString);
-        if (value == typeOfToString){
-            let newArr = arr.splice(arr.indexOf(typeOf), 1);
-            console.log(newArr);
+function filterBy(arr, value) {
+    let newArr = [];
+    for (let item of arr){
+        if (value !== typeof item){
+            newArr.push(item);
         }
     }
-
+    return newArr;
 }
 
+console.log(filterBy([1, "test", true], "string"));
 
-
-// function arrayRemove(arr, value) {
-//         arr = [1,"yeah", true];
-//     return arr.filter(function(ele){
-//         return  ele != typeof value;
-//     });
-//
+// function filterBy(arr, value) {
+//     let newArr = arr.filter(item => typeof item !== value);
+//     return newArr;
 // }
-
+//
+// console.log(filterBy([1, "test", true], "string"));
