@@ -3,7 +3,7 @@ let surname = prompt("Enter your surname");
 let birthDay = prompt("Enter your birthday dd.mm.yyyy");
 let date = new Date();
 
-function creatNewUser(userName, userSurname, userBirthDay) {
+function creatNewUser(userName, userSurname,userBirthDay) {
     this.userName = name;
     this.userSurname = surname;
     this.userBirthDay = birthDay;
@@ -17,6 +17,21 @@ function creatNewUser(userName, userSurname, userBirthDay) {
         },
         getAge: function () {
             let age = date.getFullYear() - this.birthDay.slice(-4);
+            let month = date.getMonth() + 1;
+            let day = date.getDate();
+            let dateUser = birthDay.split(".");
+
+            if (month < dateUser[1]){
+                --age;
+            }
+
+            else if (month == dateUser[1] && day < dateUser[0]){
+                --age;
+            }
+
+            else if (month == dateUser[1] && day == dateUser[0]){
+                console.log("Happy Birthday !!!");
+            }
             return age;
         },
 
