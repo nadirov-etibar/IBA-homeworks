@@ -2,15 +2,11 @@ let arr = ['hello', 'world', 'Baku', 'IBA Tech Academy', '2019', ['1', '2', '3',
 
 arr.map(function (arrItem) {
     let listUl = document.createElement('ul');
-    let listLi = document.createElement('li');
-    listUl.appendChild(listLi);
-    listLi.innerHTML = arrItem;
+    listUl.innerHTML = `<li>${arrItem}</li>`;
     if (typeof arrItem === "object"){
         arrItem.map(function(arrItemSecond){
             let listUlSecond = document.createElement('ul');
-            let listLiSecond = document.createElement('li');
-            listLi.appendChild(listUlSecond).appendChild(listLiSecond);
-            listLiSecond.innerHTML = arrItemSecond;
+            listUl.appendChild(listUlSecond).innerHTML = `<li>${arrItemSecond}</li>`;
         });
     }
     document.querySelector("script").before(listUl);
