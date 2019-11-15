@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banners</title>
+    <style>
+        .image-to-show {
+            width: 400px;
+            height: 400px;
+            opacity: 0;
+            position: absolute;
+        }
+        .images-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .center{
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            position: relative;
+            top: 400px;
+        }
+
+        #stop{
+            width: 100px;
+            border-radius: 30px;
+            background: red;
+            border: 1px solid red;
+            color: white;
+        }
+
+        #resume{
+            width: 100px;
+            border-radius: 30px;
+            background: green;
+            border: 1px solid green;
+            color: white;
+
+        }
+
+        .active{
+            opacity: 1;
+            animation: fade .5s linear;
+        }
+
+        @keyframes fade {
+            0%,100% {
+                opacity: 1
+            }
+            50% {
+                opacity: .5
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="images-wrapper">
+    <img src="./img/1.jpg" alt="image of game" class="image-to-show active" />
+    <img src="./img/2.jpg" alt="image of game" class="image-to-show" />
+    <img src="./img/3.JPG" alt="image of game" class="image-to-show" />
+    <img src="./img/4.png" alt="image of game" class="image-to-show" />
+</div>
+
+<div class="center">
+    <button id="stop">Stop</button>
+    <button id="resume">Resume</button>
+    <span id="second">10.</span><span id="millisecond">99</span>
+    <script src="js/main.js"></script>
+</div>
+
+</body>
+</html>
