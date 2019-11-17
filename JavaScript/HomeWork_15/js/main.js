@@ -22,24 +22,20 @@ $(document).ready(function () {
         }
     });
 
-    $(".slideToggle").text("-");
     let add = false;
-    $.myFunction = function () {
+    $(".slideToggle").text("-").css({fontSize: "30px"});
+    $(".slideToggle").click(function () {
         if (add == false){
-            $(".slideToggle").text("+");
-            $(".popular_post_div").css({display: "none"});
+            $(".slideToggle").text("+").css({fontSize: "30px"});
             add = true;
         }
-        else if (add == true){
-            $(".slideToggle").text("-");
-            $(".popular_post_div").css({display: "block"});
+
+        else {
+            $(".slideToggle").text("-").css({fontSize: "30px"});
             add = false;
         }
-    };
+        $(".popular_post_div").slideToggle();
+    })
 
 
 });
-
-function slideToggle() {
-    $.myFunction();
-}
