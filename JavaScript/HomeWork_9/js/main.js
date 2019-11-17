@@ -12,7 +12,7 @@
 //     });
 // }
 
-// WITH DATASET 
+// WITH DATASET
 
 let tabs = document.getElementsByClassName("tabs-title");
 let content = document.getElementsByClassName("content");
