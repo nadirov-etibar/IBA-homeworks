@@ -260,8 +260,8 @@ html, body{
 
 .header_h2{
     font-size: 36px;
-    margin-top: 35%;
-    margin-bottom: 25%;
+    margin-top: 80px;
+    margin-bottom: 70px;
     text-transform: capitalize;
     color: #4e4e4e;
     font-weight: 400;
@@ -282,7 +282,6 @@ html, body{
 .service_menu{
     display: flex;
     list-style: none;
-    text-transform: uppercase;
     width: 100%;
     padding-inline-start: 0;
 }
@@ -299,8 +298,9 @@ html, body{
 }
 
 .service_menu_list>a{
-    color: #a7a9a9;
+    color: #4e4e4e;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 .active{
@@ -337,6 +337,10 @@ html, body{
     margin-block-end: 0;
 }
 
+/***********************End of Our Service Section***************/
+
+/*************************Everything Section*********************/
+
 .everything{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sections_background/section-2.jpg");
     background-repeat: no-repeat;
@@ -363,3 +367,222 @@ html, body{
 .btn_green_two{
     margin-top: 5%;
 }
+
+/********************End of Everything Section***************/
+
+/*******************Our Amazing Work Section*****************/
+
+.amazing_work{
+    background: #f8fcfe;
+}
+
+.work_menu{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.work_menu_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ebecec;
+}
+
+.work_menu_list>a{
+    color: #4e4e4e;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 25px;
+}
+
+.active_work{
+    border-top: 2px solid #18cfab;
+}
+
+.active_work>a{
+    color: #18cfab;
+}
+
+.image_div{
+    padding: 5% 0;
+}
+
+.row {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.image{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.image:nth-child(4n){
+    margin-right: 0;
+}
+
+.description{
+    width: 285px;
+    height: 207px;
+    border-top: 2px solid #18cfab;
+    text-align: center;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+}
+
+.image:hover .description{
+    opacity: 1;
+}
+
+.description_icons>i{
+    color: #18cfab;
+    border: 1px solid #18cfab;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.description_icons>i:hover{
+    background: #18cfab;
+    color: white;
+}
+
+.description_header{
+    font-size: 23px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.description_tab{
+    color: #4e4e4e;
+    font-size: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.btn_div{
+    padding-bottom: 5%;
+}
+
+.load_more{
+    width: 165px;
+    height: 60px;
+    background: #18cfab;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid #18cfab;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.plus{
+    font-size: 24px;
+}
+
+/************End of Our Amazing Work Section*************/
+
+/******************Breaking News Section*****************/
+
+.news_image{
+    cursor: pointer;
+    margin-right: 36px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.news_image:nth-child(4n){
+     margin-right: 0;
+ }
+
+.news_description{
+    background: #f8fcfe;
+    border: 1px solid #eeefef;
+    padding-left: 10px;
+    position: relative;
+    bottom: 4px;
+}
+
+.date{
+    width: 68px;
+    height: 66px;
+    background: #203e38;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    right: 0;
+    top: 0;
+}
+
+.paragraph{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.news_header{
+    color: #7a7a7a;
+    text-transform: capitalize;
+}
+
+.news_info{
+    color: #777;
+}
+
+.admin::after{
+    content: "";
+    border: none;
+    margin: 0 10px;
+    border-right: 1px solid #777;
+}
+
+.news_image:hover .date{
+    background: #18cfab;
+}
+
+.news_image:hover .news_header{
+    color: #18cfab;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
