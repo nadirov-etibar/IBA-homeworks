@@ -89,7 +89,7 @@ html, body{
 }
 
 .color_white{
-    color: white;
+    color: white; !important;
 }
 
 .color_green{
@@ -270,7 +270,7 @@ html, body{
 
 .header_h2:after{
     content: "";
-    left: 80px;
+    left: calc((100% - 77px) / 2);
     top: 60px;
     display: block;
     position: absolute;
@@ -295,11 +295,7 @@ html, body{
     justify-content: center;
     align-items: center;
     position: relative;
-}
-
-.service_menu_list>a{
     color: #4e4e4e;
-    text-decoration: none;
     text-transform: capitalize;
 }
 
@@ -325,12 +321,20 @@ html, body{
 }
 
 .service_description_div{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    display: none;
 }
 
 .service_description{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.desc_active{
+    display: block;
+}
+
+.service_description_text{
     text-align: justify;
     margin-left: 10px;
     margin-block-start: 0;
@@ -567,7 +571,137 @@ html, body{
     color: #18cfab;
 }
 
+/****************End of Breaking News Section*********/
 
+/*********************About HAM Section**************/
+
+.about_ham{
+    background-image: url("../img/sections_background/section-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /*height: 1144px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0;
+}
+
+.h2_white{
+    color: white;
+    text-transform: none;
+}
+
+.quote-icon{
+    font-size: 44px;
+    color: #18cfab;
+}
+
+.slick-bigger {
+    width: 1160px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.slick-bigger .slide_image_div{
+    border-radius: 100%;
+    width: 153px;
+    border:10px solid rgba(10, 80, 65, .5) ;
+    margin-left: calc((100% - 149px) / 2);
+}
+
+.slick-bigger img{
+    width: 149px;
+    border-radius: 100%;
+    border: 2px solid #18cfab;
+}
+
+.slick-smaller{
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.slick-smaller img{
+    width: 62px;
+    height: 62px;
+    border:5px solid rgba(10, 80, 65, .5) ;
+    margin-right: 30px;
+    border-radius: 70px;
+}
+
+.slick-slider{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.slick-list{
+    text-align: center;
+}
+
+.about_ham_text{
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.about_ham_name{
+    color: #18cfab;
+    font-weight: 700;
+    font-size: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 43px;
+}
+
+.about_ham_prof{
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 27px;
+}
+
+.slick-current+img{
+    position: relative;
+    bottom: 5px;
+    box-shadow: 1px 1px 0 5px rgba(10, 80, 65, .5);
+    border: 2px solid #18cfab;
+}
+
+.slick-smaller .slick-track{
+    height: 100px;
+    padding: 20px
+}
+
+/*************End of About HAM Section****************/
+
+.footer_div{
+    background: #22353f;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer_text{
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.footer_ham{
+    color: #18cfab;
+    text-transform: none;
+}
+
+.footer_ham::after{
+    content: "";
+    border: none;
+    margin: 0 5px;
+    height: 14px;
+    border-right: 1px solid #fff;
+}
 
 
 

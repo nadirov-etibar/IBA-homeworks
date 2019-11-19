@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The HAM</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -80,21 +82,58 @@
                 <h2 class="header_h2">our services</h2>
             </div>
         </div>
-        <div class="service_menu_div center">
+        <div class="service_menu_div center " >
             <ul class="service_menu">
-                <li class="service_menu_list active"><a href="">Web Design</a></li>
-                <li class="service_menu_list"><a href="">Graphic Design</a></li>
-                <li class="service_menu_list"><a href="">Online Support</a></li>
-                <li class="service_menu_list"><a href="">App Design</a></li>
-                <li class="service_menu_list"><a href="">Online Marketing</a></li>
-                <li class="service_menu_list"><a href="">Seo Service</a></li>
+                <li class="service_menu_list active" data-id="1">Web Design</li>
+                <li class="service_menu_list" data-id="2">Graphic Design</li>
+                <li class="service_menu_list" data-id="3">Online Support</li>
+                <li class="service_menu_list" data-id="4">App Design</li>
+                <li class="service_menu_list" data-id="5">Online Marketing</li>
+                <li class="service_menu_list"  data-id="6">Seo Service</li>
             </ul>
         </div>
-        <div class="service_description_div center">
+        <div class="service_description_div center desc_active" id="des_tab_1">
+            <div class="service_description">
+                <div class="service_img">
+                    <img src="img/Layer.png" alt="">
+                </div>
+                <p class="service_description_text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum. Deserunt mollit anim id est
+                    laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint
+                    occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="service_description_div center" id="des_tab_2">
+            <div class="service_description">
+                <div class="service_img">
+                    <img src="img/Layer.png" alt="">
+                </div>
+                <p class="service_description_text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum. Deserunt mollit anim id est
+                    laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint
+                    occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="service_description_div center" id="des_tab_3">
+            <div class="service_description">
             <div class="service_img">
                 <img src="img/Layer.png" alt="">
             </div>
-            <p class="service_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            <p class="service_description_text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
@@ -105,7 +144,62 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint
                 occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+            </div>
+            </div>
+        <div class="service_description_div center" id="des_tab_4">
+            <div class="service_description">
+            <div class="service_img">
+                <img src="img/Layer.png" alt="">
+            </div>
+            <p class="service_description_text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum. Deserunt mollit anim id est
+                laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint
+                occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            </div>
+        <div class="service_description_div center" id="des_tab_5">
+            <div class="service_description">
+            <div class="service_img">
+                <img src="img/Layer.png" alt="">
+            </div>
+            <p class="service_description_text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum. Deserunt mollit anim id est
+                laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint
+                occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            </div>
+        <div class="service_description_div center" id="des_tab_6">
+            <div class="service_description">
+            <div class="service_img">
+                <img src="img/Layer.png" alt="">
+            </div>
+            <p class="service_description_text ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum. Deserunt mollit anim id est
+                laborum. Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint
+                occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            </div>
     </section>
 <!--Everything Section-->
     <section class="everything center">
@@ -184,8 +278,8 @@
                             <i class="fas fa-link"></i>
                             <i class="fas fa-search"></i>
                         </div>
-                        <h2 class="">creative design</h2>
-                        <p class="">web design</p>
+                        <h2 class="description_header color_green">creative design</h2>
+                        <p class="description_tab">web design</p>
                     </div>
                 </div>
                 <div class="image">
@@ -195,8 +289,8 @@
                             <i class="fas fa-link"></i>
                             <i class="fas fa-search"></i>
                         </div>
-                        <h2 class="">creative design</h2>
-                        <p class="">web design</p>
+                        <h2 class="description_header color_green">creative design</h2>
+                        <p class="description_tab">web design</p>
                     </div>
                 </div>
                 <div class="image">
@@ -206,8 +300,8 @@
                             <i class="fas fa-link"></i>
                             <i class="fas fa-search"></i>
                         </div>
-                        <h2 class="">creative design</h2>
-                        <p class="">web design</p>
+                        <h2 class="description_header color_green">creative design</h2>
+                        <p class="description_tab">web design</p>
                     </div>
                 </div>
                 <div class="image">
@@ -217,8 +311,8 @@
                             <i class="fas fa-link"></i>
                             <i class="fas fa-search"></i>
                         </div>
-                        <h2 class="">creative design</h2>
-                        <p class="">web design</p>
+                        <h2 class="description_header color_green">creative design</h2>
+                        <p class="description_tab">web design</p>
                     </div>
                 </div>
             </div>
@@ -230,8 +324,8 @@
                             <i class="fas fa-link"></i>
                             <i class="fas fa-search"></i>
                         </div>
-                        <h2 class="">creative design</h2>
-                        <p class="">web design</p>
+                        <h2 class="description_header color_green">creative design</h2>
+                        <p class="description_tab">web design</p>
                     </div>
                 </div>
                 <div class="image">
@@ -241,8 +335,8 @@
                             <i class="fas fa-link"></i>
                             <i class="fas fa-search"></i>
                         </div>
-                        <h2 class="">creative design</h2>
-                        <p class="">web design</p>
+                        <h2 class="description_header color_green">creative design</h2>
+                        <p class="description_tab">web design</p>
                     </div>
                 </div>
                 <div class="image">
@@ -252,8 +346,8 @@
                             <i class="fas fa-link"></i>
                             <i class="fas fa-search"></i>
                         </div>
-                        <h2 class="">creative design</h2>
-                        <p class="">web design</p>
+                        <h2 class="description_header color_green">creative design</h2>
+                        <p class="description_tab">web design</p>
                     </div>
                 </div>
                 <div class="image">
@@ -263,8 +357,8 @@
                             <i class="fas fa-link"></i>
                             <i class="fas fa-search"></i>
                         </div>
-                        <h2 class="">creative design</h2>
-                        <p class="">web design</p>
+                        <h2 class="description_header color_green">creative design</h2>
+                        <p class="description_tab">web design</p>
                     </div>
                 </div>
             </div>
@@ -375,6 +469,86 @@
             </div>
         </div>
     </section>
+<!--About The HAM-->
+    <section class="about_ham center">
+        <div>
+            <h2 class="header_h2 h2_white">What People Say About theHam</h2>
+        </div>
+        <div>
+            <i class="fas fa-quote-left quote-icon"></i>
+        </div>
+        <div class="slick-slider">
+            <div class="slick-bigger">
+                <div class="slick-list">
+                    <p class="about_ham_text">Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit.
+                        Accusamus blanditiis consectetur enim ex
+                        facere id magni maiores minima, molestias
+                        nulla numquam, odit omnis optio praesentium
+                        quisquam quos repudiandae, sint sit.</p>
+                    <p class="about_ham_name">Hasan Ali </p>
+                    <p class="about_ham_prof">UX Designer</p>
+                    <div class="slide_image_div">
+                    <img src="img/about/Layer1.png" alt="slide-1">
+                    </div>
+                </div>
+                <div class="slick-list">
+                    <p class="about_ham_text">Lorem ipsum dolor
+                        sit amet, consectetur adipisicing elit.
+                        Accusamus blanditiis consectetur enim ex
+                        facere id magni maiores minima, molestias
+                        nulla numquam, odit omnis optio praesentium
+                        quisquam quos repudiandae, sint sit.</p>
+                    <p class="about_ham_name">Ulkar Mammad </p>
+                    <p class="about_ham_prof">UI Designer</p>
+                    <div class="slide_image_div">
+                    <img src="img/about/Layer2.png" alt="slide-2">
+                    </div>
+                </div>
+                <div class="slick-list">
+                    <p class="about_ham_text">Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit.
+                    Accusamus blanditiis consectetur enim ex
+                    facere id magni maiores minima, molestias
+                    nulla numquam, odit omnis optio praesentium
+                    quisquam quos repudiandae, sint sit.</p>
+                    <p class="about_ham_name">Murad Hasan </p>
+                    <p class="about_ham_prof">UX Designer</p>
+                    <div class="slide_image_div">
+                    <img src="img/about/Layer3.png" alt="slide-3">
+                    </div>
+                </div>
+                <div class="slick-list">
+                    <p class="about_ham_text">Lorem ipsum dolor
+                    sit amet, consectetur adipisicing elit.
+                    Accusamus blanditiis consectetur enim ex
+                    facere id magni maiores minima, molestias
+                    nulla numquam, odit omnis optio praesentium
+                    quisquam quos repudiandae, sint sit.</p>
+                    <p class="about_ham_name"> Maryam Ali </p>
+                    <p class="about_ham_prof">UI Designer</p>
+                    <div class="slide_image_div">
+                    <img src="img/about/Layer4.png" alt="slide-4">
+                    </div>
+                </div>
+            </div>
+            <div class="slick-smaller">
+                <img class="slick-list" src="img/about/Layer4.png" alt="slide-4">
+                <img class="slick-list" src="img/about/Layer1.png" alt="slide-1">
+                <img class="slick-list" src="img/about/Layer2.png" alt="slide-2">
+                <img class="slick-list" src="img/about/Layer3.png" alt="slide-3">
+            </div>
+        </div>
+    </section>
 </main>
+<!--End of Main Section-->
+
+<!--Footer Section-->
+<footer class="footer_div">
+    <p class="paragraph footer_text">&copy; copyright 2015 <span class="footer_ham">theHam</span> all rights reserved</p>
+</footer>
+<script src="js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
