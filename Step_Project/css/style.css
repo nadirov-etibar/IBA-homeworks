@@ -302,9 +302,6 @@ html, body{
 .active{
     background-color: #18cfab;
     border: 1px solid #18cfab;
-}
-
-.active>a{
     color: white;
 }
 
@@ -395,11 +392,7 @@ html, body{
     align-items: center;
     background-color: #fff;
     border: 1px solid #ebecec;
-}
-
-.work_menu_list>a{
     color: #4e4e4e;
-    text-decoration: none;
     text-transform: capitalize;
     padding: 25px;
 }
@@ -418,6 +411,7 @@ html, body{
 
 .row {
     display: flex;
+    flex-flow: wrap;
     width: 1160px;
     margin: 0 auto;
 }
@@ -540,6 +534,13 @@ html, body{
     color: white;
     right: 0;
     top: 0;
+}
+
+.row_news {
+    display: flex;
+    flex-flow: wrap;
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .paragraph{
@@ -674,6 +675,52 @@ html, body{
 .slick-smaller .slick-track{
     height: 100px;
     padding: 20px
+}
+
+.slick-prev{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    color: white;
+    left: -35px;
+    top: 55px;
+    border: 1px solid white;
+}
+
+.slick-prev:hover{
+    border: 1px solid #18cfab;
+    background: #18cfab;
+}
+
+.slick-prev:before {
+    content: '\2039';
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    bottom: 6px;
+}
+
+.slick-next{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    color: white;
+    right: -35px;
+    top: 55px;
+    border: 1px solid white;
+}
+
+.slick-next:hover{
+    border: 1px solid #18cfab;
+    background: #18cfab;
+}
+
+.slick-next:before {
+    content: '\203A';
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    bottom: 6px;
 }
 
 /*************End of About HAM Section****************/
