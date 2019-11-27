@@ -1,0 +1,279 @@
+.delivery{
+display: flex;
+  &__bg {
+    background-image: url("../img/Pizza_delivery.png");
+    background-repeat: no-repeat;
+    //background-size: cover;
+    background-position: 79% 95%;
+    height: 75px;
+    width: calc(100% - 71px);
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+  }
+  &__text{
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: white;
+    display: inline;
+    position: relative;
+    left: 63px;
+    top: 27px;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+}
+
+.salads{
+  display: flex;
+  margin-top: 2px;
+  &__bg{
+    background-image: url("../img/UA_UXSalads.png");
+    background-repeat: no-repeat;
+    //background-size: cover;
+    background-position: 24% 93%;
+    width: calc(100% - 71px);
+    height: 74px;
+  }
+  text-decoration: none;
+  &__text{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    display: inline;
+    left: 74px;
+    top: 29px;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+}
+
+.deserts{
+  display: flex;
+  margin-top: 2px;
+  &__bg{
+    background-image: url("../img/Desserts.png");
+    background-repeat: no-repeat;
+    //background-size: cover;
+    background-position: 16% 15%;
+    width: calc(100% - 71px);
+    height: 74px;
+  }
+  text-decoration: none;
+  &__text{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    display: inline;
+    left: 83px;
+    top: 27px;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+  &__desc{
+    color: #d2d3d5;
+    left: 7px;
+    position: relative;
+    top: 11px;
+  }
+}
+
+.green{
+  width: 71px;
+  //margin: 4px 0;
+  height: 74px;
+  background: #acd8ad;
+  &__right{
+    font-size: 14px;
+    position: relative;
+    left: 30px;
+    top: 28px;
+    color: white;
+  }
+}
+
+.delivery_green{
+  height: 75px;
+}
+
+.Neque{
+  padding: 23px 0 0 7px;
+}
+
+.sectionNeque{
+
+  &__header{
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    //position: relative;
+    //left: 7px;
+    //top: 9px;
+    color: #3f4043;
+    //margin-bottom: 4px;
+    display: inline;
+  }
+
+  &__desc{
+    position: relative;
+    left: 2px;
+    top: 4px;
+    display: inline;
+    color: #d2d3d5;
+  }
+}
+
+.tincidunt{
+  padding: 13px 0 0 0;
+  &__div {
+    background: #3f4043;
+    //height: 37px;
+    padding: 10px 0 7px 17px;
+  }
+  &__text{
+    position: relative;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    color: #a5cea6;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: inline;
+    //top: 9px;
+    //left: 18px;
+    font-size: 20px;
+  }
+}
+
+.listnames{
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 17px 8px 17px;
+  &__header{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    top: 6px;
+    color: #3f4043
+  }
+}
+
+.listdiv{
+  //position: relative;
+    //list-style: disc;
+  margin-bottom: 6px;
+  &__li{
+    padding: 0 16px;
+    margin-bottom: 3px;
+  }
+
+  font-family: "Lato", sans-serif;
+  &__head{
+    font-size: 13px;
+    position: relative;
+    top: 10px;
+    color: #3f4043
+    //left: 16px;
+  }
+
+  &__head::before{
+    content: "\2022";
+    font-size: 8px;
+    margin-right: 2px;
+    position: relative;
+    bottom: 2px;
+  }
+
+  &__span{
+    position: relative;
+    left: 247px;
+    bottom: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #3f4043
+  }
+
+  &__p{
+    color: #3f4043;
+    position: relative;
+    top: 1px;
+  }
+}
+
+.liname2{
+  &__icon{
+    position: relative;
+    right: 6px;
+    top: 3px;
+  }
+}
+
+.vestibulum{
+  padding: 13px 0 0 0;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  &__div {
+    background: #acd8ad;
+    //height: 37px;
+    padding: 10px 0 7px 17px;
+  }
+  &__text{
+    position: relative;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: inline;
+    //top: 9px;
+    //left: 18px;
+    font-size: 20px;
+  }
+}
+
+.augue{
+  position: relative;
+  top: 2px;
+}
+
+.augue_icon{
+  position: relative;
+  top: -3px;
+  left: 2px;
+}
+
+.pharetra_icon{
+  margin: 2px 5px 3px 0;
+}
+
+.footer{
+  margin-top: 50px;
+  &__div{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    background: #acd8ad;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  &__p{
+    margin-bottom: 6px;
+  }
+}
+
+.best{
+  position: relative;
+  left: 3px;
+}
