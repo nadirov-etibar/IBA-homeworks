@@ -1,12 +1,15 @@
 .delivery{
-display: flex;
+  display: flex;
   &__bg {
     background-image: url("../img/Pizza_delivery.png");
     background-repeat: no-repeat;
     //background-size: cover;
     background-position: 79% 95%;
-    height: 75px;
-    width: calc(100% - 71px);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 7.5rem;
+    width: calc(100% - 7.1rem);
     //display: flex;
     //justify-content: center;
     //align-items: center;
@@ -16,100 +19,115 @@ display: flex;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     color: white;
-    display: inline;
-    position: relative;
-    left: 63px;
-    top: 27px;
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //position: relative;
+    //left: 63px;
+    //top: 27px;
+    //margin: 27px 0 0 0;
+    font-size: 2.0rem;
     text-transform: capitalize;
   }
 }
 
 .salads{
   display: flex;
-  margin-top: 2px;
+  margin-top: .2rem;
   &__bg{
     background-image: url("../img/UA_UXSalads.png");
     background-repeat: no-repeat;
     //background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-position: 24% 93%;
-    width: calc(100% - 71px);
-    height: 74px;
+    width: calc(100% - 7.1rem);
+    height: 7.4rem;
   }
   text-decoration: none;
   &__text{
     font-family: "Lato", sans-serif;
     font-weight: 700;
     color: white;
-    position: relative;
-    display: inline;
-    left: 74px;
-    top: 29px;
-    font-size: 20px;
+    //position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //left: 7.4rem;
+    //top: 2.9rem;
+    font-size: 2rem;
     text-transform: capitalize;
   }
 }
 
 .deserts{
   display: flex;
-  margin-top: 2px;
+  margin-top: .2rem;
   &__bg{
     background-image: url("../img/Desserts.png");
     background-repeat: no-repeat;
     //background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-position: 16% 15%;
-    width: calc(100% - 71px);
-    height: 74px;
+    width: calc(100% - 7.1rem);
+    height: 7.4rem;
   }
   text-decoration: none;
   &__text{
     font-family: "Lato", sans-serif;
     font-weight: 700;
     color: white;
-    position: relative;
-    display: inline;
-    left: 83px;
-    top: 27px;
-    font-size: 20px;
+    //position: relative;
+    //display: inline;
+    //left: 8.3rem;
+    //top: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
     text-transform: capitalize;
   }
 
   &__desc{
     color: #d2d3d5;
-    left: 7px;
+    left: .7rem;
     position: relative;
-    top: 11px;
+    top: 1.1rem;
   }
 }
 
 .green{
-  width: 71px;
+  width: 7.1rem;
   //margin: 4px 0;
-  height: 74px;
+  height: 7.4rem;
   background: #acd8ad;
   &__right{
-    font-size: 14px;
+    font-size: 1.4rem;
     position: relative;
-    left: 30px;
-    top: 28px;
+    left: 3rem;
+    top: 2.8rem;
     color: white;
   }
 }
 
 .delivery_green{
-  height: 75px;
-}
-
-.Neque{
-  padding: 23px 0 0 7px;
+  height: 7.5rem;
 }
 
 .sectionNeque{
-
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 0 0 .7rem;
   &__header{
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 2rem;
+    display: flex;
+    //justify-content: center;
+    align-items: center;
     margin-block-start: 0;
     margin-block-end: 0;
     //position: relative;
@@ -117,24 +135,28 @@ display: flex;
     //top: 9px;
     color: #3f4043;
     //margin-bottom: 4px;
-    display: inline;
+    //display: inline;
   }
 
   &__desc{
     position: relative;
-    left: 2px;
-    top: 4px;
+    left: .8rem;
+    top: .4rem;
     display: inline;
     color: #d2d3d5;
   }
 }
 
+.menu_logo{
+  display: none;
+}
+
 .tincidunt{
-  padding: 13px 0 0 0;
+  padding: 1.3rem 0 0 0;
   &__div {
     background: #3f4043;
     //height: 37px;
-    padding: 10px 0 7px 17px;
+    padding: 1rem 0 .7rem 6%;
   }
   &__text{
     position: relative;
@@ -146,22 +168,20 @@ display: flex;
     display: inline;
     //top: 9px;
     //left: 18px;
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 
 .listnames{
-  position: relative;
-
   display: flex;
   justify-content: space-between;
-  padding: 11px 17px 8px 17px;
+  padding: 1.1rem 1.7rem .8rem 1.7rem;
   &__header{
     font-family: "Lato", sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-transform: uppercase;
     position: relative;
-    top: 6px;
+    top: .6rem;
     color: #3f4043
   }
 }
@@ -169,61 +189,70 @@ display: flex;
 .listdiv{
   //position: relative;
     //list-style: disc;
-  margin-bottom: 6px;
+  margin-bottom: .6rem;
   &__li{
-    padding: 0 16px;
-    margin-bottom: 3px;
+    padding: 0 1.6rem;
+    margin-bottom: .3rem;
   }
 
+  &__liDiv{
+    //position: relative;
+    //top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
   font-family: "Lato", sans-serif;
   &__head{
-    font-size: 13px;
-    position: relative;
-    top: 10px;
+    font-size: 1.3rem;
+    display: inline;
     color: #3f4043
     //left: 16px;
   }
 
   &__head::before{
     content: "\2022";
-    font-size: 8px;
-    margin-right: 2px;
+    font-size: .8rem;
+    margin-right: .2rem;
     position: relative;
-    bottom: 2px;
+    bottom: .2rem;
   }
 
   &__span{
-    position: relative;
-    left: 247px;
-    bottom: 4px;
-    font-size: 14px;
+    //position: relative;
+    //left: 86%;
+    //bottom: 4px;
+    font-size: 1.4rem;
     font-weight: 700;
     color: #3f4043
   }
 
   &__p{
     color: #3f4043;
-    position: relative;
-    top: 1px;
+    //position: relative;
+    //top: 1px;
+    margin-top: .5rem;
+    margin-bottom: 1.1rem;
   }
 }
 
 .liname2{
+  margin-top: -6px;
   &__icon{
     position: relative;
-    right: 6px;
-    top: 3px;
+    right: .6rem;
+    top: .3rem;
   }
 }
 
 .vestibulum{
-  padding: 13px 0 0 0;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  padding: 1.3rem 0 0 0;
+  margin-top: 1.7rem;
+  margin-bottom: .5rem;
   &__div {
     background: #acd8ad;
     //height: 37px;
-    padding: 10px 0 7px 17px;
+    padding: 1rem 0 .7rem 6%;
   }
   &__text{
     position: relative;
@@ -235,13 +264,13 @@ display: flex;
     display: inline;
     //top: 9px;
     //left: 18px;
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 
 .augue{
   position: relative;
-  top: 2px;
+  top: .2rem;
 }
 
 .augue_icon{
@@ -251,13 +280,13 @@ display: flex;
 }
 
 .pharetra_icon{
-  margin: 2px 5px 3px 0;
+  margin: .1rem .5rem .3rem 0;
 }
 
 .footer{
-  margin-top: 50px;
+  margin-top: 5rem;
   &__div{
-    padding: 12px;
+    padding: 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -265,15 +294,15 @@ display: flex;
     font-family: "Montserrat", sans-serif;
     background: #acd8ad;
     color: #fff;
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 
   &__p{
-    margin-bottom: 6px;
+    margin-bottom: .6rem;
   }
 }
 
 .best{
   position: relative;
-  left: 3px;
+  left: .3rem;
 }

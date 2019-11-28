@@ -1,4 +1,4 @@
-@media screen and (min-width: 321px) and (max-width: 639px){
+@media screen and (min-width: 321px) and (max-width: 979px){
   .delivery__bg{
     background-size: cover;
   }
@@ -9,5 +9,99 @@
 
   .deserts__bg{
     background-size: cover;
+  }
+
+  .sectionNeque{
+    padding: 40px 0 0 .8rem;
+  }
+
+  .listnames__icon{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .liname2__icon{
+    width: 1.3rem;
+    height: 2.4rem;
+  }
+
+  .pharetra_icon{
+    width: 2.1rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  html{
+    font-size: 16px;
+  }
+
+  .delivery_salads_deserts{
+    display: flex;
+    width: 100%;
+  }
+
+  .delivery__bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 327px;
+    height: 327px;
+    margin-top: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .delivery_text{
+      font-size: 34px;
+      position: relative;
+      left: 0;
+      top: 0;
+  }
+
+
+  .salads__bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 326px;
+    height: 327px;
+  }
+
+  .deserts__bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 327px;
+    height: 327px;
+  }
+
+  .green{
+    display: none;
+  }
+
+  .sectionNeque{
+    padding: 23px 2.5rem 0 2.5rem;
+  }
+
+  .sectionNeque__header{
+      font-size: 3rem;
+  }
+
+  .sectionNeque__desc{
+    position: relative;
+    top: -16px;
+    left: 2.7rem;
+  }
+
+  .menu_logo{
+    display: block;
+  }
+
+  .tincidunt_vestibulum{
+    display: flex;
+    padding: 0 1.7rem;
+  }
+
+  .vestibulum{
+    margin-top: 0;
   }
 }
