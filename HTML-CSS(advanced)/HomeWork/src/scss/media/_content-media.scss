@@ -44,7 +44,7 @@
   .delivery__bg {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 327px;
+    width: calc(100vw / 3);
     height: 327px;
     margin-top: .2rem;
     display: flex;
@@ -63,14 +63,14 @@
   .salads__bg{
     background-repeat: no-repeat;
     background-size: cover;
-    width: 326px;
+    width: calc(100vw / 3);
     height: 327px;
   }
 
   .deserts__bg{
     background-repeat: no-repeat;
     background-size: cover;
-    width: 327px;
+    width: calc(100vw / 3);
     height: 327px;
   }
 
@@ -103,5 +103,49 @@
 
   .vestibulum{
     margin-top: 0;
+  }
+
+  .footer{
+    &__div{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+  &__text{
+    display: flex;
+    flex-direction: row;
+  }
+  }
+  .best{
+    position: relative;
+    left: 0;
+  }
+  .new{
+    margin-left: 1px;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .main{
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .delivery__bg{
+    width: calc(1200px / 3);
+  }
+
+  .salads__bg{
+    width: calc(1200px / 3);
+  }
+
+  .deserts__bg{
+    width: calc(1200px / 3);
+  }
+
+  .footer{
+    width: 1200px;
+    margin: 0 auto;
   }
 }

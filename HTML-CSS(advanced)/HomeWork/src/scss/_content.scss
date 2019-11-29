@@ -3,16 +3,12 @@
   &__bg {
     background-image: url("../img/Pizza_delivery.png");
     background-repeat: no-repeat;
-    //background-size: cover;
     background-position: 79% 95%;
     display: flex;
     justify-content: center;
     align-content: center;
     height: 7.5rem;
     width: calc(100% - 7.1rem);
-    //display: flex;
-    //justify-content: center;
-    //align-items: center;
   }
   &__text{
     text-decoration: none;
@@ -22,10 +18,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    //position: relative;
-    //left: 63px;
-    //top: 27px;
-    //margin: 27px 0 0 0;
     font-size: 2.0rem;
     text-transform: capitalize;
   }
@@ -37,7 +29,6 @@
   &__bg{
     background-image: url("../img/UA_UXSalads.png");
     background-repeat: no-repeat;
-    //background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,12 +41,9 @@
     font-family: "Lato", sans-serif;
     font-weight: 700;
     color: white;
-    //position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    //left: 7.4rem;
-    //top: 2.9rem;
     font-size: 2rem;
     text-transform: capitalize;
   }
@@ -67,7 +55,6 @@
   &__bg{
     background-image: url("../img/Desserts.png");
     background-repeat: no-repeat;
-    //background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,10 +67,6 @@
     font-family: "Lato", sans-serif;
     font-weight: 700;
     color: white;
-    //position: relative;
-    //display: inline;
-    //left: 8.3rem;
-    //top: 2.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,7 +84,6 @@
 
 .green{
   width: 7.1rem;
-  //margin: 4px 0;
   height: 7.4rem;
   background: #acd8ad;
   &__right{
@@ -126,16 +108,10 @@
     text-transform: uppercase;
     font-size: 2rem;
     display: flex;
-    //justify-content: center;
     align-items: center;
     margin-block-start: 0;
     margin-block-end: 0;
-    //position: relative;
-    //left: 7px;
-    //top: 9px;
     color: #3f4043;
-    //margin-bottom: 4px;
-    //display: inline;
   }
 
   &__desc{
@@ -155,19 +131,15 @@
   padding: 1.3rem 0 0 0;
   &__div {
     background: #3f4043;
-    //height: 37px;
     padding: 1rem 0 .7rem 6%;
   }
   &__text{
-    position: relative;
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     color: #a5cea6;
     margin-block-start: 0;
     margin-block-end: 0;
     display: inline;
-    //top: 9px;
-    //left: 18px;
     font-size: 2rem;
   }
 }
@@ -187,8 +159,6 @@
 }
 
 .listdiv{
-  //position: relative;
-    //list-style: disc;
   margin-bottom: .6rem;
   &__li{
     padding: 0 1.6rem;
@@ -196,8 +166,6 @@
   }
 
   &__liDiv{
-    //position: relative;
-    //top: 10px;
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
@@ -207,7 +175,6 @@
     font-size: 1.3rem;
     display: inline;
     color: #3f4043
-    //left: 16px;
   }
 
   &__head::before{
@@ -219,9 +186,6 @@
   }
 
   &__span{
-    //position: relative;
-    //left: 86%;
-    //bottom: 4px;
     font-size: 1.4rem;
     font-weight: 700;
     color: #3f4043
@@ -229,8 +193,6 @@
 
   &__p{
     color: #3f4043;
-    //position: relative;
-    //top: 1px;
     margin-top: .5rem;
     margin-bottom: 1.1rem;
   }
@@ -251,7 +213,6 @@
   margin-bottom: .5rem;
   &__div {
     background: #acd8ad;
-    //height: 37px;
     padding: 1rem 0 .7rem 6%;
   }
   &__text{
@@ -262,8 +223,6 @@
     margin-block-start: 0;
     margin-block-end: 0;
     display: inline;
-    //top: 9px;
-    //left: 18px;
     font-size: 2rem;
   }
 }
@@ -295,6 +254,13 @@
     background: #acd8ad;
     color: #fff;
     font-size: 1.2rem;
+  }
+
+  &__text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__p{
