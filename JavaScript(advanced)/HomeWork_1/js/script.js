@@ -8,24 +8,53 @@
 
 
 function Hamburger(size, stuffing) {
-    var toppings = [];
+    var toppingNames = [];
     this.size = size;
     this.stuffing = stuffing;
-    this.setToppings = (newToppings) => {
+    this.setToppingNames = (newToppings) => {
         if (!newToppings instanceof Array) {
             throw new Error("new toppings has to be Array")
         }
         /* deleting all old values from toppings and inserting new values */
-        toppings.splice(
+        toppingNames.splice(
             0,
-            toppings.length,
+            toppingNames.length,
             ...newToppings
         )
     };
-    this.getToppings = () => {
+    this.getToppingNames = () => {
         // return toppings;
-        return [...toppings];
+        return [...toppingNames];
         // return Array.copy(toppings);
+    };
+
+    this.checkSize=(size)=>{
+        try {
+            switch (size) {
+                case "small":
+                    return Hamburger.SIZE_SMALL;
+                case  "large":
+                    return Hamburger.SIZE_LARGE;
+                default:
+                    throw new Error("Size error");
+            }
+        }
+        catch (e) {
+            console.error(e);
+        }
+    };
+    this.checkStuffing=(stuffing)=>{
+        switch (stuffing) {
+            case "cheese":
+                return Hamburger.STUFFING_CHEESE;
+            case  "salad":
+                return Hamburger.STUFFING_SALAD;
+            case  "potato":
+                return Hamburger.STUFFING_POTATO;
+            default:
+                throw new Error("stuffing error");
+        }
+
     }
 }
 
@@ -68,13 +97,13 @@ Hamburger.TOPPING_SPICE = {
  */
 Hamburger.prototype.addTopping = function (topping) {
     try {
-        var currentToppings = this.getToppings();
+        var currentToppings = this.getToppingNames();
 
         if (currentToppings.some(el => el === topping)) {
             throw new HamburgerException("This topping already exists!")
         } else {
             currentToppings.push(topping);
-            this.setToppings(currentToppings);
+            this.setToppingNames(currentToppings);
         }
     } catch (e) {
         console.error(e.message);
@@ -82,14 +111,14 @@ Hamburger.prototype.addTopping = function (topping) {
 };
 
 /**
- * Delete the topping, only if it was added earlier.
+ * Delete the toppping, only if it was added earlier.
  *
  * @param topping   topping type
  * @throws {HamburgerException}  in case of incorrect usage
  */
 Hamburger.prototype.removeTopping = function (topping) {
     try {
-        var currentToppings = this.getToppings();
+        var currentToppings = this.getToppingNames();
 
         if (!currentToppings.some(el => el === topping)) {
             throw new HamburgerException("Nothing to delete")
@@ -98,7 +127,7 @@ Hamburger.prototype.removeTopping = function (topping) {
                 currentToppings.indexOf(topping),
                 1
             );
-            this.setToppings(currentToppings);
+            this.setToppingNames(currentToppings);
         }
     } catch (e) {
         console.error(e.message);
@@ -111,7 +140,12 @@ Hamburger.prototype.removeTopping = function (topping) {
  * @return {Array} an Array with the list of constants like Hamburger.TOPPING_* inside
  */
 Hamburger.prototype.getToppings = function () {
-
+    try {
+        return this.getToppingNames().map(t => this.checkTopping(t));
+    } catch (e) {
+        console.log(e.message);
+    }
+    return null;
 };
 Hamburger.prototype.checkTopping = function (topping) {
     switch (topping) {
@@ -127,30 +161,28 @@ Hamburger.prototype.checkTopping = function (topping) {
 /**
  * Find out the size of the Hamburger
  */
-Hamburger.prototype.getSize = function (size) {
-    switch (size) {
-        case "small":
-            return Hamburger.SIZE_SMALL;
-        case "large":
-            return Hamburger.SIZE_LARGE;
-        default:
-            throw new HamburgerException("Incorrect size value!");
+Hamburger.prototype.getSize = function () {
+    /* implement Hamburger.prototype.checkSize(),
+    * to be responsible for turn 'small' into Hamburger.SIZE_SMALL object */
+    try {
+        return this.checkSize(this.size);
+    }
+    catch (e) {
+        console.error(e);
     }
 };
 
 /**
  * Find out the stuffing of the Hamburger
  */
-Hamburger.prototype.getStuffing = function (stuffing) {
-    switch (stuffing) {
-        case "cheese":
-            return Hamburger.STUFFING_CHEESE;
-        case "salad":
-            return Hamburger.STUFFING_SALAD;
-        case "potato" :
-            return Hamburger.STUFFING_POTATO;
-        default:
-            throw new HamburgerException("Incorrect stuff value!");
+Hamburger.prototype.getStuffing = function () {
+    /* implement Hamburger.prototype.checkStuffing(),
+    * to be responsible for turn 'salad' into Hamburger.STUFFING_SALAD object */
+    try {
+        return this.checkStuffing(this.stuffing);
+    }
+    catch (e) {
+        console.error(e);
     }
 };
 
@@ -158,9 +190,26 @@ Hamburger.prototype.getStuffing = function (stuffing) {
  * Find out the price of the hamburger
  * @return {Number} the number of price in AZN
  */
-Hamburger.prototype.calculatePrice = function (size, stuffing) {
-    var price = 0;
-    price = this.getSize(size).price + this.getStuffing(stuffing).price;
+Hamburger.prototype.calculatePrice = function () {
+//  get size and price of it
+//  +
+//  get stuffing and price of it
+//   +
+//  get all toppings
+    let price=0;
+    try {
+        price+= this.checkSize(this.size).price;
+    }
+    catch (e) {
+        console.error(e);
+    }
+    try {
+        price+= this.checkStuffing(this.stuffing).price;
+    }
+    catch (e) {
+        console.error(e);
+    }
+    hamburger.getToppings().forEach(e=>{price+=e.price});
     return price;
 };
 
@@ -169,10 +218,23 @@ Hamburger.prototype.calculatePrice = function (size, stuffing) {
  * @return {Number} Number of calories
  */
 
-Hamburger.prototype.calculateCalories = function (size, stuffing) {
-    var calories = 0;
-    calories = this.getSize(size).cal + this.getStuffing(stuffing).cal;
-    return calories;
+Hamburger.prototype.calculateCalories = function () {
+    /*same implementation, as for previous method*/
+    let cal=0;
+    try {
+        cal+= this.checkSize(this.size).cal;
+    }
+    catch (e) {
+        console.error(e);
+    }
+    try {
+        cal+= this.checkStuffing(this.stuffing).cal;
+    }
+    catch (e) {
+        console.error(e);
+    }
+    hamburger.getToppings().forEach(e=>{cal+=e.cal});
+    return cal;
 };
 
 /**
@@ -185,31 +247,31 @@ function HamburgerException(msg) {
 }
 
 // // small hamburger with cheese
-var hamburger = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
+var hamburger = new Hamburger("small", "cheese");
 // // mayo topping
-hamburger.addTopping(Hamburger.TOPPING_MAYO);
-// // asking the number of calories
+hamburger.addTopping("mayo");
+// asking the number of calories
 console.log("Calories: %f", hamburger.calculateCalories());
 // // asking the price
-// console.log("Price: %f", hamburger.calculatePrice());
+console.log("Price: %f", hamburger.calculatePrice());
 // // I've changed my mind, and I've decided to add more topping
-// hamburger.addTopping(Hamburger.TOPPING_SPICE);
+hamburger.addTopping("spice");
 // // Did hte price changed?
-// console.log("Price with sauce: %f", hamburger.calculatePrice());
+console.log("Price with sauce: %f", hamburger.calculatePrice());
 // // How large is this hamburger
-// console.log("Is hamburger large: %s", hamburger.getSize() === Hamburger.SIZE_LARGE); // -> false
+console.log("Is hamburger large: %s", hamburger.getSize() === Hamburger.SIZE_LARGE); // -> false
 // // Remove the topping
-// hamburger.removeTopping(Hamburger.TOPPING_SPICE);
-// console.log("Have %d toppings", hamburger.getToppings().length); // 1
+hamburger.removeTopping("spice");
+console.log("Have %d toppings", hamburger.getToppings().length); // 1
 // // have not passed on the necessary parameters
-// var h2 = new Hamburger(); // => HamburgerException: no size given
+var h2 = new Hamburger(); // => HamburgerException: no size given
 //
 // // pass incorrect values, an topping instead of a size
-// var h3 = new Hamburger(Hamburger.TOPPING_SPICE, Hamburger.TOPPING_SPICE);
+var h3 = new Hamburger("spice", "spice");
 // // => HamburgerException: invalid size 'TOPPING_SAUCE'
 //
 // // add to many toppings
-// var h4 = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
-// hamburger.addTopping(Hamburger.TOPPING_MAYO);
-// hamburger.addTopping(Hamburger.TOPPING_MAYO);
+var h4 = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
+hamburger.addTopping("mayo");
+hamburger.addTopping("mayo");
 // HamburgerException: duplicate topping 'TOPPING_MAYO'
